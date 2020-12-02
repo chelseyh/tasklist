@@ -18,7 +18,7 @@ export default {
   },
   data(){
     return{
-      tasks:
+      task:
       [
         {id:0, title:"Learn HTML", completed: true},
         {id:1, title:"Learn Javascript", completed: false},
@@ -32,7 +32,7 @@ export default {
     .then( (response) =>
     {
       console.log(response.data)
-      this.tasks = response.data
+      this.task = response.data
     })
   }
 }
